@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import api from "../api/axios";
+import { useCart } from "../context/CartContext";
 
 export default function Menu() {
   const [foods, setFoods] = useState([]);
   const [error, setError] = useState("");
+  const { addToCart } = useCart();
 
   useEffect(() => {
     api
@@ -22,7 +24,15 @@ export default function Menu() {
             <p className="text-xs text-yellow-600">{f.category?.name}</p>
             <h3 className="text-xl text-yellow-500 font-semibold">{f.name}</h3>
             <p className="text-sm mt-1">{f.description}</p>
-            <p className="mt-3 font-bold">₹{f.price}</p>
+            <div className="mt-3 flex items-center justify-between">
+              <p className="font-bold">₹{f.price}</p>
+              <button
+                onClick={() => addToCart(f)}
+                className="bg-yellow-500 text-black px-3 py-1 rounded text-sm font-semibold"
+              >
+                Add to Cart
+              </button>
+            </div>
           </div>
         ))}
       </div>
