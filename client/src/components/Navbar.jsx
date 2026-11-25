@@ -10,6 +10,7 @@ export default function Navbar() {
       <Link to="/" className="text-2xl font-bold tracking-widest">VELMORA</Link>
       <div className="flex gap-6 items-center">
         <Link to="/menu">Menu</Link>
+        <Link to="/reservations">Reservations</Link>
         <Link to="/cart">Cart ({count})</Link>
         {user ? (
           <>
