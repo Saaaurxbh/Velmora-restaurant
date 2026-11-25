@@ -6,7 +6,7 @@ export default function Navbar() {
   const { user, logout } = useAuth();
   const { count } = useCart();
   return (
-    <nav className="bg-black text-yellow-500 px-8 py-4 flex items-center justify-between border-b border-yellow-700">
+    <nav className="bg-black/80 backdrop-blur text-yellow-500 px-8 py-4 flex items-center justify-between border-b border-yellow-700">
       <Link to="/" className="text-2xl font-bold tracking-widest">VELMORA</Link>
       <div className="flex gap-6 items-center">
         <Link to="/menu">Menu</Link>

@@ -15,7 +15,7 @@ export default function Menu() {
   }, []);
 
   return (
-    <div className="bg-black min-h-[80vh] px-8 py-10">
+    <div className="min-h-[80vh] px-8 py-10">
       <h2 className="text-3xl text-yellow-500 font-bold mb-8">Our Menu</h2>
       {error && <p className="text-red-400">{error}</p>}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -40,7 +40,7 @@ export default function Reservation() {
 
   if (!user) {
     return (
-      <div className="bg-black min-h-[80vh] p-10 text-stone-300">
+      <div className="min-h-[80vh] p-10 text-stone-300">
         <h2 className="text-3xl text-yellow-500 font-bold mb-4">Reserve a Table</h2>
         <p>Please <Link to="/login" className="text-yellow-500">login</Link> to book a table.</p>
       </div>
@@ -48,7 +48,7 @@ export default function Reservation() {
   }
 
   return (
-    <div className="bg-black min-h-[80vh] p-10 text-stone-200 max-w-2xl">
+    <div className="min-h-[80vh] p-10 text-stone-200 max-w-2xl">
       <h2 className="text-3xl text-yellow-500 font-bold mb-6">Reserve a Table</h2>
       <form onSubmit={handleSubmit} className="space-y-3 border border-yellow-700 p-5 rounded">
         {msg && <p className="text-green-400 text-sm">{msg}</p>}

@@ -27,7 +27,7 @@ export default function Cart() {
 
   if (items.length === 0) {
     return (
-      <div className="bg-black min-h-[80vh] text-stone-300 p-10">
+      <div className="min-h-[80vh] text-stone-300 p-10">
         <h2 className="text-3xl text-yellow-500 font-bold mb-4">Your Cart</h2>
         <p>Cart is empty. <Link to="/menu" className="text-yellow-500">Go to menu</Link></p>
       </div>
@@ -35,7 +35,7 @@ export default function Cart() {
   }
 
   return (
-    <div className="bg-black min-h-[80vh] text-stone-200 p-10 max-w-2xl">
+    <div className="min-h-[80vh] text-stone-200 p-10 max-w-2xl">
       <h2 className="text-3xl text-yellow-500 font-bold mb-6">Your Cart</h2>
       {items.map((i) => (
         <div key={i._id} className="flex items-center justify-between border-b border-stone-700 py-3">

@@ -9,7 +9,7 @@ export default function Orders() {
   }, []);
 
   return (
-    <div className="bg-black min-h-[80vh] p-10 text-stone-200">
+    <div className="min-h-[80vh] p-10 text-stone-200">
       <h2 className="text-3xl text-yellow-500 font-bold mb-6">My Orders</h2>
       {orders.length === 0 && <p>No orders yet.</p>}
       <div className="space-y-4 max-w-2xl">

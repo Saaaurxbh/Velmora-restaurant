@@ -22,7 +22,7 @@ export default function Register() {
   };
 
   return (
-    <div className="bg-black min-h-[80vh] flex items-center justify-center">
+    <div className="min-h-[80vh] flex items-center justify-center">
       <form onSubmit={handleSubmit} className="w-80 space-y-4 border border-yellow-700 p-6 rounded">
         <h2 className="text-2xl text-yellow-500 font-bold">Register</h2>
         {error && <p className="text-red-400 text-sm">{error}</p>}

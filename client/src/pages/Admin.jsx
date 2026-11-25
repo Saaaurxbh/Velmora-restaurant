@@ -59,7 +59,7 @@ export default function Admin() {
     `px-4 py-2 rounded ${tab === name ? "bg-yellow-500 text-black" : "border border-yellow-500 text-yellow-500"}`;
 
   return (
-    <div className="bg-black min-h-[80vh] p-8 text-stone-200">
+    <div className="min-h-[80vh] p-8 text-stone-200">
       <h2 className="text-3xl text-yellow-500 font-bold mb-6">Admin Dashboard</h2>
       <div className="flex gap-3 mb-6">
         <button className={tabBtn("orders")} onClick={() => setTab("orders")}>Orders</button>
