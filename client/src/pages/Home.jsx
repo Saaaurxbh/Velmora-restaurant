@@ -29,7 +29,7 @@ export default function Home() {
           style={{ backgroundImage: `url(${src})` }}
         />
       ))}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
 
       <div className="relative z-10 px-6">
         <h1 className="text-7xl font-bold text-yellow-500 tracking-[0.3em]">VELMORA</h1>
@@ -41,7 +41,7 @@ export default function Home() {
           <Link to="/menu" className="bg-yellow-500 text-black px-6 py-3 rounded font-semibold">
             View Menu
           </Link>
-          <Link to="/reservations" className="border border-yellow-500 text-yellow-500 px-6 py-3 rounded">
+          <Link to="/reservations" className="border border-yellow-500 text-yellow-500 bg-black/40 px-6 py-3 rounded">
             Book a Table
           </Link>
         </div>
