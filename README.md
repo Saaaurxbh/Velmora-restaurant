@@ -1,3 +1,13 @@
+AWS Project live demo link—
+
+
+http://ServiceHub-ALB-180870333.ap-south-1.elb.amazonaws.com
+
+
+
+
+
+
 # VELMORA - Restaurant Full Stack App
 
 A full stack restaurant web app where customers browse the menu, order food and book tables, and an admin manages everything from a protected dashboard.
